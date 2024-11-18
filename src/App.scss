@@ -5,9 +5,9 @@ body {
 }
 
 body {
-	background-image: radial-gradient(#021027, #000000);
-  margin: 0;
-  padding: 0;
+	background-image: radial-gradient(#383838, #000000);
+  	margin: 0;
+  	padding: 0;
 }
 
 #main {
@@ -16,9 +16,9 @@ body {
 }
 
 .circle-container {
-	$particleWidth: 10px;
+	$particleWidth: 5px;
 	$particleNum: 200;
-	$particleColor: hsl(180, 100%, 80%);
+	$particleColor: rgb(255, 213, 0);
 
 	position: absolute;
 	transform: translateY(-10vh);
@@ -31,12 +31,12 @@ body {
 		border-radius: 50%;
 		mix-blend-mode: screen;
 		background-image: radial-gradient(
-			hsl(180, 100%, 80%),
-			hsl(180, 100%, 80%) 10%,
-			hsla(180, 100%, 80%, 0) 56%
+			rgb(255, 213, 0),
+			rgb(255, 213, 0) 10%,
+			rgba(255, 213, 0, 0) 56%
 		);
 
-		animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+		animation: fadein-frames 200ms infinite, scale-frames 2s infinite, color-frames 200ms infinite;
 
 		@keyframes fade-frames {
 			0% {
@@ -63,6 +63,32 @@ body {
 
 			100% {
 				transform: scale3d(0.4, 0.4, 1);
+			}
+		}
+
+    @keyframes color-frames {
+			0% {
+				background-image: radial-gradient(
+        rgb(84, 84, 84),
+        rgb(84, 84, 84) 10%,
+        rgba(84, 84, 84, 0) 56%
+      );
+			}
+
+			50% {
+				background-image: radial-gradient(
+        rgb(255, 213, 0),
+        rgb(255, 213, 0) 10%,
+        rgba(255, 213, 0, 0) 56%
+      ); 
+			}
+
+			100% {
+				background-image: radial-gradient(
+        rgb(255, 170, 0),
+        rgb(255, 170, 0) 10%,
+        rgba(255, 170, 0, 0) 56%
+      );
 			}
 		}
 	}
