@@ -77,17 +77,17 @@ body {
 
 			50% {
 				background-image: radial-gradient(
-					rgb(255, 170, 0),
-					rgb(255, 170, 0) 10%,
-					rgba(255, 170, 0, 0) 56%
+					rgb(125, 125, 125),
+					rgb(125, 125, 125) 10%,
+					rgba(125, 125, 125, 0) 56%
 				);
 			}
 			
 			100% {
 				background-image: radial-gradient(
-					rgb(255, 255, 255),
-					rgb(255, 255, 255) 10%,
-					rgba(255, 213, 0, 0) 56%
+					rgb(200, 200, 200),
+					rgb(200, 200, 200) 10%,
+					rgba(200, 200, 200, 0) 56%
 				); 
 			}
 		}
@@ -101,7 +101,7 @@ body {
 
 			$startPositionY: random(10) + 100;
 			$framesName: "move-frames-" + $i;
-			$moveDuration: 7000 + random(4000) + ms;
+			$moveDuration: 15000 + random(4000) + ms;
 
 			animation-name: #{$framesName};
 			animation-duration: $moveDuration;
