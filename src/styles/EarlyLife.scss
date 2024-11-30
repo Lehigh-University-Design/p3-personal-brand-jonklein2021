@@ -1,0 +1,30 @@
+.earlylife {
+	.header {
+		text-align: center;
+        margin-bottom: 2em;
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+        margin: 0 5em;
+
+		.left, .right {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			img {
+				width: 75%;
+				height: auto;
+			}
+		}
+
+		.left {
+			align-items: flex-start;
+		}
+
+		.right {
+			align-items: flex-end;
+		}
+	}
+}

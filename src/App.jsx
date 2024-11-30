@@ -1,21 +1,25 @@
-import React from 'react'
-import './styles/App.scss'
+import React from 'react';
 import Particles from './components/Particles';
+import './styles/App.scss';
+
+// Pages
+import Landing from './pages/Landing';
+import EarlyLife from './pages/EarlyLife';
+import Education from './pages/Education';
+import Career from './pages/Career';
 
 function App() {
   return (
     <>
-        <Particles />
+      {/* Comment out the following line if lagging */}
+      {/* <Particles /> */}
 
-        {/* Landing Page */}
-        <div id="main">
-          <div className='landing'>
-            <div>
-              <h0>OPPENHEIMER</h0>
-              <h2>Science and Sacrifice</h2>
-            </div>
-          </div>
-        </div>
+      <div id="main">
+        <Landing />
+        <EarlyLife />
+        <Education />
+        <Career />
+      </div>
     </>
   )
 }
