@@ -1,0 +1,32 @@
+.career {
+	.header {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 5em;
+
+		.left, .right {
+			display: flex;
+			flex-direction: column;
+			img {
+				width: 80%;
+				height: auto;
+			}
+		}
+
+		.left {
+			width: 75%;
+      align-items: flex-start;
+		}
+    
+		.right {
+      justify-content: space-between;
+      width: 25%;
+			align-items: flex-end;
+		}
+	}
+}

@@ -18,7 +18,7 @@ function App() {
         <Landing />
         <EarlyLife />
         <Education />
-        {/* <Career /> */}
+        <Career />
       </div>
     </>
   )
