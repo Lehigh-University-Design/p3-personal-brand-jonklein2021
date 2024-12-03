@@ -10,3 +10,10 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.landing {
+		background-size: cover;
+		background-position: right;
+	}
+}
