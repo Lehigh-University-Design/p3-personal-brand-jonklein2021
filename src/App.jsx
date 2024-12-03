@@ -7,6 +7,7 @@ import Landing from './pages/Landing';
 import EarlyLife from './pages/EarlyLife';
 import Education from './pages/Education';
 import Career from './pages/Career';
+import Timeline from './pages/Timeline';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <EarlyLife />
         <Education />
         <Career />
+        <Timeline />
       </div>
     </>
   )
