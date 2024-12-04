@@ -9,7 +9,7 @@
 		height: 2px;
 		border-radius: 50%;
 		background-color: rgb(201, 201, 201);
-		animation: fadein-frames 200ms infinite, scale-frames 2s infinite, color-frames 4s infinite;
+		animation: fadein-frames 1.5s infinite, scale-frames 2s infinite, color-frames 4s infinite;
 
 		@keyframes fadein-frames {
 			0% {

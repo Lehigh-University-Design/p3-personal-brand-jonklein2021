@@ -4,7 +4,7 @@ import '../styles/Particles.scss';
 function Particles() {
   useEffect(() => {
     const container = document.querySelector('body');
-    const numParticles = 100;
+    const numParticles = 50;
 
     const generateParticles = () => {
       for (let i = 1; i <= numParticles; i++) {

@@ -2,7 +2,6 @@
     position: relative;
     width: 80%;
     height: auto;
-    // cursor: pointer;
 
     img {
         width: 100%;
@@ -27,6 +26,16 @@
 
         p {
             font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-card {
+        .overlay {
+            p {
+                font-size: 1.8vw;
+            }
         }
     }
 }
