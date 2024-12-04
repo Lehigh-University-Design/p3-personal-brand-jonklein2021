@@ -8,19 +8,18 @@
 		display: flex;
 		justify-content: space-between;
 
-		.left,
-		.right {
+		.left, .right {
 			display: flex;
 			flex-direction: column;
+		}
+		
+		.left {
+			width: 75%;
+			align-items: flex-start;
 			img {
 				width: 80%;
 				height: auto;
 			}
-		}
-
-		.left {
-			width: 75%;
-			align-items: flex-start;
 		}
 
 		.right {
@@ -37,8 +36,7 @@
 			padding: 0 1em;
 			flex-direction: column;
 
-			.left,
-			.right {
+			.left, .right {
 				width: 100%;
 				align-items: center;
 			}
