@@ -41,7 +41,7 @@ function App() {
   return (
     <>
       {/* Comment out the following line if lagging */}
-      {/* <Particles /> */}
+      <Particles />
 
       {opacity > 0 && <Overlay opacity={opacity} />}
 
