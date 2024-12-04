@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/ProfileCard.scss';
 
-function ProfileCard({ image, title, desc }) {
+function ProfileCard({ aos, image, title, desc }) {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="profile-card" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+    <div data-aos={aos} className="profile-card" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
       <img src={image} alt="Profile" />
       {hover &&
         <div className="overlay">
