@@ -17,14 +17,19 @@ function App() {
   useEffect(() => {
     const main = document.getElementById('main');
     const windowHeight = window.innerHeight;
-    const limit = 7*windowHeight;
-    const mainHeight = main.clientHeight;
+    const point1 = 7 * windowHeight;
+    const point2 = 13 * windowHeight;
+    const point3 = 14 * windowHeight;
+    const height = main.clientHeight;
     window.addEventListener('scroll', () => {
       const scroll = window.scrollY;
-      // console.log(scroll + " " + limit);
-      if (scroll > limit) {  
-        const height = mainHeight;
-        const opacity = (scroll-limit) / height;
+      if (scroll > point3) { // fade out overlay
+        const opacity = 1 - (scroll - point2) / (point3 - point2);
+        setOpacity(opacity);
+      } else if (scroll > point2) { // sustain overlay
+        setOpacity(1);
+      } else if (scroll > point1) { // fade in overlay
+        const opacity = (scroll - point1) / (point2 - point1);
         setOpacity(opacity);
       } else {
         setOpacity(0);

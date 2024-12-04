@@ -22,8 +22,8 @@ function Career() {
         </div>
         <div className="right">
           <ProfileCard image={frank} title="Frank" desc="Robert's younger brother and a physicist, Frank was a member of the Communist Party during the 1930s." />
-          <ProfileCard image={jean} title="Jean" desc="A psychiatrist and Robert’s former fiancée, Jean was a committed Communist Party member and an influential figure in his political awakening." />
-          <ProfileCard image={katherine} title="Katherine" desc="Robert’s wife, Kitty was a biologist and former Communist Party member who maintained strong political views." />
+          <ProfileCard image={jean} title="Jean" desc="A psychiatrist and Robert's former fiancée, Jean was a committed Communist Party member and an influential figure in his political awakening." />
+          <ProfileCard image={katherine} title="Katherine" desc="Robert's wife, Kitty was a biologist and former Communist Party member who maintained strong political views." />
         </div>
       </div>
     </div>
